@@ -1,0 +1,25 @@
+body{
+    font-size: 15px;
+}
+#box{
+    height: 150px;
+    width: 300px;
+    border: 5px black dotted;
+    background-color: gray;
+    font-size: 1em; /* with respect to parent font size, parent is body, where body font-size is 15px */
+    margin-top:20px;
+    margin-bottom:40px;
+    margin-left: 2em;
+    margin-right: 1em; /* with respect to element font size*/
+    padding: 1em;  /* with respect to element font size*/
+}
+.circle{
+    height:100px;
+    width:100px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+}
+ul li{
+    display: inline-block;
+}

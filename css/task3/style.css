@@ -1,0 +1,14 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: #1b74e4;
+}
+form button{
+    background-color: black;
+    color: white;
+}
+#account button{
+    background-color: aqua;
+    color: black;
+}

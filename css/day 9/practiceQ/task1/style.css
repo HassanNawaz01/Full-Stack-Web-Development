@@ -1,0 +1,27 @@
+
+body h1{
+    text-align: center;
+}
+#container{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    border: 2px solid rgb(12, 158, 158);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    background-color: grey;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}

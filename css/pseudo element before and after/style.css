@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100%;
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 150px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn1::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-99%);
+    transition: 0.8s ease-in-out;
+}
+.btn1:hover{
+    color: white;
+    border-color: white;
+}
+.btn1:hover::before{
+    transform: translateX(0%);
+}
+/* button 2 */
+.btn2::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-95%);
+    transition: 0.8s ease-in-out;
+}
+.btn2::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(95%);
+    transition: 0.8s ease-in-out;
+}
+.btn2:hover{
+    color: white;
+    border-color: white;
+}
+.btn2:hover::before{
+    transform: translateX(-50%);
+}
+.btn2:hover::after{
+    transform: translateX(50%);
+}
+/* button 3 */
+.btn3::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    transition: 0.8s ease-in-out;
+}
+.btn3::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(50%);
+    transition: 0.8s ease-in-out;
+}
+.btn3:hover{
+    border-color: white;
+    color: black;
+}
+.btn3:hover::before{
+    transform: translateX(-100%);
+}
+.btn3:hover::after{
+    transform: translateX(100%);
+}
+/* button 4 */
+.btn4::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color:magenta;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition: 0.8s ease-in-out;
+}
+.btn4::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color:magenta;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(50%);
+    transition: 0.8s ease-in-out;
+}
+.btn4:hover{
+    border-color: white;
+    color: black;
+}
+.btn4:hover::before{
+    transform: translateY(-100%);
+}
+.btn4:hover::after{
+    transform: translateY(100%);
+}
+/* button 5 */
+.btn5::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color:green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-115%);
+    transition: 0.8s ease-in-out;
+}
+.btn5::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color:green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(115%);
+    transition: 0.8s ease-in-out;
+}
+.btn5:hover{
+    border-color: white;
+    color: black;
+}
+.btn5:hover::before{
+    transform: translateX(-50%) rotate(180deg);
+}
+.btn5:hover::after{
+    transform:translateX(50%) rotate(-180deg);
+}
+/* button 6 */
+.btn6::before{
+    content:'';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    z-index: -1;
+    transition: 1.5s ease-in-out;
+}
+.btn6:hover{
+    border-color: white;
+    color: black;
+}
+.btn6:hover::before{
+    background-color:magenta;
+    transform: rotate(360deg) scale(20);
+}
+/* article */
+.article{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 2px 2px 5px black;
+}
+.article img{
+    transition: 0.6s linear;
+}
+.article:hover img{
+    transform: scale(1.1);
+}
+.article::before{
+    content: 'Article';
+    width: 100%;
+    height: 40px;
+    color:white;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    font-weight: 800;
+    font-size: xx-large;
+    transform:translateY(-100px);
+    transition: 1s ease-in;
+    z-index: 1;
+}
+.article::after{
+    content: 'lorem ipsun this is the article';
+    color:white;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: 1s ease-in;
+    transform:translateY(100px);
+}
+.article:hover::before{
+    transform:translateY(0px);
+}
+.article:hover::after{
+    transform:translateY(0px);
+}

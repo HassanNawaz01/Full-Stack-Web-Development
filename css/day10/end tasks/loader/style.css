@@ -1,0 +1,16 @@
+#loader{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    border: 16px solid rgb(234, 232, 232);
+    border-top: 16px solid goldenrod;
+    animation: loader 2s linear infinite;
+}
+@keyframes loader {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}

@@ -1,0 +1,9 @@
+input{
+    background-color: mediumturquoise;
+    color: mediumturquoise;
+}
+form{
+    border: 2px solid grey ;
+    border-radius:3px ;
+    padding: 20px;
+}

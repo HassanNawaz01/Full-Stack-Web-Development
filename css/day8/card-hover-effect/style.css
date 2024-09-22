@@ -1,0 +1,18 @@
+.card{
+    border: 2px solid black;
+    display: inline-block;
+    margin:5px;
+    width: 200px;
+    height:300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+img{
+    width: inherit;
+}
+.card:hover{
+box-shadow: 4px 4px 20px black;
+}
+.desc{
+    text-align: center;
+}

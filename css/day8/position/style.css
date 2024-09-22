@@ -1,0 +1,52 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#static {
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+#relative {
+    background-color: yellowgreen;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute {
+    background-color: yellowgreen;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+
+#absthird {
+    background-color: blueviolet;
+    position:absolute;
+    text-align: center;
+    font-size: larger;
+    color: aliceblue;
+}
+#absolute {
+    background-color: yellowgreen;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+#fixed {
+    background-color: yellowgreen;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+#fixed3{
+    position:fixed;
+}
+
